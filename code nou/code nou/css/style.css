@@ -65,10 +65,12 @@ body{
     
 }
 #about {
-    margin-right: 100px;
+    margin-right: 110px;
+    margin-left: -130px
 }
 #arrivals{
     margin-right: 100px;
+    margin-left: -110px
 }
 
 
@@ -78,6 +80,7 @@ body{
     width: 5em;
     height: auto;
     margin-left: 10px;
+    padding: 10px;
 
 }
 
@@ -96,90 +99,6 @@ header .logo img {
 
 
 
-footer .container hr {
-    margin-top: 0;
-    margin-bottom: 25px;
-}
-
-footer .container a {
-    display: inline-block;
-    max-width: 36px;
-    margin: 0 5px;
-}
-
-footer .container a img {
-    width: auto;
-    height: auto;
-    max-width: 100%;
-}
-
-
-main img {
-    max-width: 100%;
-    width: 100%;
-}
-
-main .img-description {
-    text-align: center;
-    margin-top: 5px;
-    font-style: italic;
-    color: #a5a5a5;
-}
-
-main .three-col {
-    padding: 0 0 50px;
-}
-
-main .three-col > .row {
-    margin: 0 -15px;
-}
-
-main .three-col .col {
-    max-width: 33.333333%;
-    padding: 0 15px;
-    float: left;
-}
-
-
-
-
-main .site-title {
-    margin-top: 50px;
-}
-
-main form {
-    padding: 50px 0;
-}
-
-main .form-group {
-    width: 100%;
-    float: none;
-    margin: 10px auto;
-    max-width: 50%;
-    min-width: 500px;
-    position: relative;
-}
-
-
-main .form-group .half {
-    width: 100%;
-}
-
-main .form-group .half label {
-    position: absolute;
-    top: 0;
-    left: 0;
-    font-weight: bold;
-    color: #edc6a9;
-}
-
-main .form-group .half input {
-    width: 100%;
-    border: none;
-    background: transparent;
-    border-bottom: 2px solid #edc6a9;
-}
-
 .cover {
     display: flex;
     background-color: white;
@@ -192,10 +111,7 @@ main .form-group .half input {
 }
 
 
-.coffeecan {
-    width: 100%;
-    margin-left: 2em;
-}
+
 
 .container2 {
     display: flex;
@@ -235,12 +151,9 @@ flex-direction: column}
 #location{
     font-family: "Halant";
     font-weight: 400;
-  float: right;
   width: 50%;
   padding: 10px;
-display: flex;
-flex-direction: column;
-    margin-top: -14em;
+grid-row-start: 2;
     text-align: center;
     
     
@@ -250,53 +163,40 @@ flex-direction: column;
     font-weight: 400;
     margin-left: 4em;
     width: 50%;
+    grid-row-start: 1;
+    margin-top: 60px
 }
 
     
 p{
     font-family: "Montserrat";
-    line-height: 0.3;
+    line-height: 0.5;
     margin-left: 4em;
     font-weight: 300;
+    grid-row-start: 1;
     
 }
-
-#map{
-    float: right;
-  width: 100%;
-  padding: 10px;
-display: flex;
-flex-direction: column;
-    margin-top: -24em;
-    margin-right: 4em
+#location{
     
-    
-}
-
-
-.icons {
-    color: #edc6a9;
-    padding: 1em;
-}
-
-.campaign-item {
+    font-family: "Halant";
+    font-size: 25px;
     text-align: center;
-    color: white;
-    border: white solid 1px;
-    margin: 2em;
-    padding: 2em;
-
+    width: 100%;
+    margin-bottom: 0;
+    margin-top: 50px;
 }
 
-.campaign-box {
-    margin: 0 0 2em 0;
-    padding: 2em;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    color: white;
 
-}
+ 
+    .grid{
+        display: grid;
+        grid-template-columns: 50% 50%;
+         
+        
+    }
+    
+    
+
 
 
 /*NEW ARRIVALS*/
@@ -361,15 +261,10 @@ carousel_track {
         padding: 0 75px;
     }
 
-    .cover {
-        flex-direction: row;
-    }
+   
 
 
-    .campaign-box {
-        flex-direction: row;
-
-    }
+   
 
 }
 
@@ -394,32 +289,13 @@ carousel_track {
     .nav-main-menu {
         flex-basis: 65%;
         justify-content: space-around;
+        margin-bottom: 20px;
     }
 
-    header .main-menu ul li a {
-        color: #22427C;
-        text-decoration: none;
-        font-size: 22px;
-        font-weight: bold;
-    }
-
-    main .form-group .half {
-        max-width: 100%;
-        float: none;
-    }
+  
 
 
-    main .three-col .col {
-        max-width: 100%;
-        float: none;
-    }
 
-    .coffeecan {
-        width: 30vw;
-    }
-
-
-}
 
 
 
@@ -428,36 +304,201 @@ carousel_track {
 
 .container {
   display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
-  grid-gap: 10px;
+  grid-template-columns: 30% 22% 22% 22%;
+  grid-gap: 30px;
   font-family: 'Lato';
   text-align: center;
-  font-size: 1.4em;
-  margin: 4px 30px;
+  font-size: 1em;
+  margin-left: 1px;
     width: 100%;
+    height: 100%;
+    padding-top: 3em;
 }
 
 .item {
-  padding: 40px;
+  padding: 10px;
   font-size: 1.5em;
-  border: 1px solid black;
-    width: 8%;
+  
+    width: 55%;
+    
+    
 }
 
-.c {
-  grid-row-start: 1;
-  grid-row-end: 2;
+.a {
+    
+    grid-row-start: 1; 
+width: 55%;
+    margin-top: -2em;
+    height: 25em;
+    border: 1px solid black;
+
+    
+    
 }
 
-.e {
-  grid-row-start: 1;
-  grid-row-end: 3;
+.b{
+    grid-column-start: 2;
+    text-align:center;
+   
+    
+}
+#categories{
+    font-size: 30px;
+    font-family: "Halant";
+    font-weight: 400;
+    background-color: antiquewhite;
+    margin-top: -10;
+    width: 105%;
+    margin-bottom: 50px
+        
+    
+}
+.booktitle{
+    font-size: 1em;
+    font-family: "Halant";
+    font-weight: 400;
+    margin-bottom: 0
+    
 }
 
-.b, .j {
-  order: 2;
+.author{
+    font-size: 0.7em;
+    font-family: "Halant";
+    font-weight: 300;
+    margin-top: 0;
+        margin-bottom:0;
+    
 }
 
-.a, .i {
-  order: 3;
+.price{
+    
+     font-size: 1.1em;
+    font-family: "Halant";
+    font-weight: 500;
+    margin-top: 0
+    
 }
+hr{ width: 90%;
+       
+}
+
+#vertical{
+    margin-bottom: 20px;
+    
+    width: 1px
+}
+
+#books{
+    text-align: left;
+    margin: auto;
+    flex-basis: 50%;
+    font-size: 30px;
+    padding-top: 30px;
+    font-weight: 450;
+    margin-left: 30%;
+  
+}
+
+#limit{
+    
+    margin-left: 20%;
+   width: 70%
+}
+
+
+    
+.genres{
+    font-family: "halant";
+width: 100%;
+font-size: 20px;
+    text-align: left;
+    list-style: none;
+  margin-left: -25px;
+    margin-bottom: 25px;
+    
+    
+
+
+}
+    
+    
+    .buy{
+        width: 45%;
+
+        background-color: #E8C5BD;
+        color: #011e26;
+        border: 1px solid #011e26;
+        border-radius: 20px;
+        font-size: 15px;
+        font-family: "Halant";
+    
+    }
+    
+    .reserve{
+        width: 45%;
+        
+        background-color: #b7c5ce;
+       color: #011e26;
+        border: 1px solid #011e26;
+        border-radius: 20px;
+        font-size: 15px;
+        font-family: "Halant"
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+
+ul{
+width: 100%;
+ 
+    
+    
+    
+}
+   
+    
+    .faq{
+        display: grid;
+        grid-template-rows: 50% 50%;
+        
+    }
+    ul{
+        font-family: "Halant";
+        font-size: 20px;
+        list-style: none;
+    }
+
+    .QA1{
+        grid-row-start: 1;
+        width: 100%;
+        
+        
+        
+        
+    }
+    .QA2{
+        
+        grid-column-start: 2;
+        width: 100%;
+       
+        
+    }
+    p{
+        line-height: 1.5em;
+    }
+    footer{
+        text-align: center;
+        font-family: "Montserrat";
+        font-size: 10px;
+        margin-top: 50px
+    }
+    img{
+        
+        margin-top: 35px
+    }

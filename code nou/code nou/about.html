@@ -48,14 +48,7 @@ body { margin:0; padding:0; }
     <hr>
 
     <main>
-        <section>
-
-                <div>
-                    <img src="images/produce.jpg" class="book" alt="book"></div>
-            
-            <hr>
-
-        </section>
+        
         <section>
             <div class="title"> About</div>
             
@@ -70,8 +63,9 @@ body { margin:0; padding:0; }
                 We can guarantee you one thing: Books.
                     
             </article>
+            <div class="grid">
             <div class="row">
-  <div class="column" >
+ 
     <h2 id="opening">Opening hours:</h2>
     <p> Monday - closed</p>
             <p>Tuesday - closed</p>
@@ -82,10 +76,12 @@ body { margin:0; padding:0; }
             <p>Sunday - closed</p>
   </div>
  
-    <h2 id="location">Location</h2>
+  
    
-</div>
-    <div id="map" style='width: 500px; height: 300px;'></div>
+
+  
+    <div id="map" style='width: 500px; height: 400px;'> <h2 id="location">Location</h2></div>
+       
          <script>
 mapboxgl.accessToken = "pk.eyJ1IjoibmluYWduIiwiYSI6ImNqdGd4aHphMTBzaDE0OW14a210bWt2M2gifQ.GpQuPz7HTppUZGIwX7_UyA";
  
@@ -130,14 +126,88 @@ layout: {
 });
 });
 </script>
-        </section>
-    </main>
+        </div>
+        <h2 class="title">FAQ</h2>
+        
+        <div class="faq">
+            <div class="QA1" >
+                <ul>
+                 <li> 1. What kind of books do you sell?</li>   
+                    
+                </ul>
+                <p >
+                    We sell fiction and non-fiction. 
+                </p>
+                <br>
+                <ul>
+                 <li> 3. How do I pay?</li>   
+                </ul>
+                 <p >
+                    At the store: Mobilepay or cash
+                    <br>
+Pre-payment: Mobilepay or bank transfer
+<br>
+NO CARD PAYMENTS. 
+<br>There is a cash machine around the corner <br> from the shop.
+ 
+                </p>
+                 <ul>
+                 <li> 5. Do you mail book orders?
+                </li>   
+                </ul>
+                 <p >
+                    Yes, I mail books using Coolrunner.
+                    <br> 
+Average postage price is 45 kr. 
+                </p>
+            </div>
+            
+            <div class="QA2">
+                <ul>
+                 <li> 2. Do you sell anything besides books?</li>   
+                </ul>
+                 <p >
+                   We sell a few other second-hand items 
+                   <br>like puzzles and board games at the store 
+                   <br>but not online. 
 
+                </p>
+                  <ul>
+                 <li> 4. Can I return a book if I don’t like it?</li>   
+                </ul>
+                 <p >
+                   No, except for electronics that 
+                   don’t meet your <br>expectations 
+                   <br>as long as you message me within 24 hours
+                   <br> of purchase. 
+                </p>
+                  <ul>
+                 <li> 6. Why is the store so messy?</li>   
+                </ul>
+                 <p >
+                   We are remodelling and in order to <br>
+                   clear a mess you sometimes have to make
+                    a mess.
+                </p>
+                
+                
+                
+            </div>
+            
+        </div>
+        </section>
+       
+            
+            
+            
+      
+    </main>
+ 
 
     <footer>
 
         
-
+&copy; Exam Project 2nd Semester
 
     </footer>
 </body>
