@@ -420,3 +420,44 @@ carousel_track {
 
 
 }
+
+
+
+
+/*Books in stock*/
+
+.container {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-gap: 10px;
+  font-family: 'Lato';
+  text-align: center;
+  font-size: 1.4em;
+  margin: 4px 30px;
+    width: 100%;
+}
+
+.item {
+  padding: 40px;
+  font-size: 1.5em;
+  border: 1px solid black;
+    width: 8%;
+}
+
+.c {
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.e {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.b, .j {
+  order: 2;
+}
+
+.a, .i {
+  order: 3;
+}
