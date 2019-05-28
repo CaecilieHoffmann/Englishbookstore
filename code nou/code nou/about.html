@@ -9,15 +9,19 @@
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>English book store</title>
-
-
     <link href="css/style.css" rel="stylesheet">
+ <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.js"></script>
+<link href="https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.css" rel="stylesheet" />
+<style>
+body { margin:0; padding:0; }
+
+</style>
 </head>
 
 <body>
 
     <header>
-        <div class="container">
+        
 
             <div class="logo"> <a href="index.html">
                     <img src="images/logo.svg" alt="logo image">
@@ -25,50 +29,107 @@
 
             <div class="nav-main-menu">
 
-                <div class="nav">
-                    <a href="index.html" class="button">Campaign</a>
-                </div>
-
-                <div class="nav">
+                <div id="booksinstock">
                     <a href="booksinstock.html" class="button">Books in stock</a>
                 </div>
-
-                <div class="nav">
+<hr id="vertical">
+                <div id="arrivals">
                     <a href="newarrivals.html" class="button">New Arrivals</a>
                 </div>
-
-                <div class="nav">
+<hr id="vertical">
+                <div  id="about">
                     <a href="about.html" class="button"> About</a>
                 </div>
 
             </div>
-        </div>
+        
     </header>
 
     <hr>
 
     <main>
         <section>
-            <div class="cover">
-                <div class="title">
-                    <h1>" I have always imagined that Paradise will be a kind of library."</h1>
-                    <h3 class="only-on-desktop">Jorge Luis Borges</h3>
-                    <div class="nav">
-                        <a href="index.html" class="button">More</a>
-                    </div>
-                </div>
+
                 <div>
-                    <img src="images/produce.png" class="book" alt="book"></div>
-            </div>
+                    <img src="images/produce.jpg" class="book" alt="book"></div>
+            
             <hr>
 
         </section>
         <section>
+            <div class="title"> About</div>
             
-            <article>
-                <p>
+            <article id="description">
+               Welcome to readers heaven!
+                Aarhus English Bookstore contains more 
+                than 2,500 English titles all there for you
+                 to dig into. Browse through our stock or search
+                  by title or by category. If you want the hands-on 
+                  experience swing by the cozy little shop during 
+                  opening hours.
+                We can guarantee you one thing: Books.
                     
             </article>
+            <div class="row">
+  <div class="column" >
+    <h2 id="opening">Opening hours:</h2>
+    <p> Monday - closed</p>
+            <p>Tuesday - closed</p>
+            <p>Wednesday - 14:30 - 17:30</p>
+            <p>Thursday - - 14:30 - 17:30</p>
+            <p>Friday - - 14:30 - 17:30</p>
+            <p>Saturday - 11:00 - 13:30</p>
+            <p>Sunday - closed</p>
+  </div>
+ 
+    <h2 id="location">Location</h2>
+   
+</div>
+    <div id="map" style='width: 500px; height: 300px;'></div>
+         <script>
+mapboxgl.accessToken = "pk.eyJ1IjoibmluYWduIiwiYSI6ImNqdGd4aHphMTBzaDE0OW14a210bWt2M2gifQ.GpQuPz7HTppUZGIwX7_UyA";
+ 
+          /* Map: This represents the map on the page. */
+var map = new mapboxgl.Map({
+container: "map",
+style: "mapbox://styles/mapbox/outdoors-v11",
+zoom: 18,
+center: [10.1991,56.1501]
+});
+ 
+map.on("load", function () {
+/* Image: An image is loaded and added to the map. */
+map.loadImage("https://i.imgur.com/MK4NUzI.png", function(error, image) {
+if (error) throw error;
+map.addImage("custom-marker", image);
+/* Style layer: A style layer ties together the source and image and specifies how they are displayed on the map. */
+map.addLayer({
+id: "markers",
+type: "symbol",
+/* Source: A data source specifies the geographic coordinate where the image marker gets placed. */
+source: {
+type: "geojson",
+data: {
+type: 'FeatureCollection',
+features: [
+{
+type: 'Feature',
+properties: {},
+geometry: {
+type: "Point",
+coordinates: [10.1991, 56.1501]
+}
+}
+]
+}
+},
+layout: {
+"icon-image": "custom-marker",
+}
+});
+});
+});
+</script>
         </section>
     </main>
 

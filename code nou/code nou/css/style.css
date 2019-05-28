@@ -4,7 +4,7 @@
 /*pink: #edc6a9*/
 
 html {
-    font-family: Titillium Web, sans-serif;
+    font-family: Halant, sans-serif;
     font-size: 16px;
 }
 
@@ -13,6 +13,11 @@ a {
     
 
 }
+body{
+    background-color: #f8f7f2;
+    width: 100%;
+    
+}
 
 
 
@@ -20,55 +25,59 @@ a {
     display: none;
 }
 
-h1,
-h2,
-h3,
-h4 {
-    font-family: Roboto Slab, serif;
-    color: #182c54;
-    margin: 1em 0 1em;
-}
+
 
 
 .container {
     display: flex;
     justify-content: center;
-    align-content: center;
     flex-wrap: wrap;
     flex-direction: column;
-    text-align: center;
+   
 }
 
 .nav-main-menu {
-    display: flex;
-    justify-content: center;
-    padding: 1em;
-    flex-wrap: wrap;
+   display:inline-flex ;
+    float: right;
+    width: 100%;
+    margin-left: 300px;
     flex-direction: column;
+    column-width: 10%;
+    justify-content:center;
+    flex-wrap: wrap;
+    
 }
 
 
 .button {
-    background-color: #edc6a9;
-    color: white;
+   
+    color: #011e26;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    border: black 1px solid;
     padding: 1em;
-    width: 50vw;
+    width: 20vw;
+    float: right;
+    margin-left: 180px;
+    font-size: 20px;
+    font-family: "Halant";
+    
+}
+#about {
+    margin-right: 100px;
+}
+#arrivals{
+    margin-right: 100px;
 }
 
-.nav {
-    color: white;
 
-}
 
 
 .logo {
-    width: 100vw;
+    width: 5em;
     height: auto;
+    margin-left: 10px;
 
 }
 
@@ -104,12 +113,6 @@ footer .container a img {
     max-width: 100%;
 }
 
-main {
-    background: #f5f5f5;
-
-
-    text-align: justify;
-}
 
 main img {
     max-width: 100%;
@@ -206,8 +209,70 @@ main .form-group .half input {
     text-align: center;
     margin: auto;
     flex-basis: 50%;
+    font-size: 30px;
+    padding-top: 30px;
+    font-weight: 450;
 
 }
+#description{
+    margin-left: 30%;
+    margin-right: 30%;
+    text-align: center;
+    font-family: "Montserrat";
+    font-weight: 350;
+    line-height: 2;
+}
+
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+display: flex;
+flex-direction: column}
+
+
+#location{
+    font-family: "Halant";
+    font-weight: 400;
+  float: right;
+  width: 50%;
+  padding: 10px;
+display: flex;
+flex-direction: column;
+    margin-top: -14em;
+    text-align: center;
+    
+    
+}
+#opening{
+    font-family: "Halant";
+    font-weight: 400;
+    margin-left: 4em;
+    width: 50%;
+}
+
+    
+p{
+    font-family: "Montserrat";
+    line-height: 0.3;
+    margin-left: 4em;
+    font-weight: 300;
+    
+}
+
+#map{
+    float: right;
+  width: 100%;
+  padding: 10px;
+display: flex;
+flex-direction: column;
+    margin-top: -24em;
+    margin-right: 4em
+    
+    
+}
+
 
 .icons {
     color: #edc6a9;
@@ -281,7 +346,7 @@ carousel_track {
     }
 
     .button {
-        width: 20vw;
+        width: 2vw;
     }
 
     .nav-main-menu {
