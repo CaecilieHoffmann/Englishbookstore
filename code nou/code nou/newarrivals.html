@@ -1,72 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="English Book Store" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="description" content="English Book Store">
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>English book store</title>
 
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
 
-    <link href="css/style.css" rel="stylesheet">
-</head>
-
-<body>
-
+  <body>
     <header>
-        
+      <div class="container-top">
+        <div class="column-left logo">
+          <a href="index.html">
+            <img src="images/logo.svg" alt="logo image"  />
+          </a>
+        </div>
+        <div class="column-center">
+          <input id="search" type="text" />
+        </div>
+        <div class="column-right">
+          <img src="images/cart.png" width="32" height="32" />
+        </div>
+      </div>
 
-            <div class="logo"> <a href="index.html">
-                    <img src="images/logo.svg" alt="logo image">
-                </a></div>
-
-            <div class="nav-main-menu">
-
-                <div id="booksinstock">
-                    <a href="booksinstock.html" class="button">Books in stock</a>
-                </div>
-<hr id="vertical">
-                <div id="arrivals">
-                    <a href="newarrivals.html" class="button">New Arrivals</a>
-                </div>
-<hr id="vertical">
-                <div  id="about">
-                    <a href="about.html" class="button"> About</a>
-                </div>
-
-            </div>
-        
+      <div class="nav-main-menu">
+        <div id="booksinstock">
+          <a href="booksinstock.html" class="button">Books in stock</a>
+        </div>
+        <hr id="vertical" />
+        <div id="arrivals">
+          <a href="newarrivals.html" class="button">New Arrivals</a>
+        </div>
+        <hr id="vertical" />
+        <div id="about">
+          <a href="about.html" class="button"> About</a>
+        </div>
+      </div>
     </header>
 
-   
-  
-    <main>
+    <hr />
 
+    <main style="margin-top:100px; border-top: 1px solid gray;">
+      <!-- <section> -->
 
-        <section>
-
-            <hr>
- HERE STARTS THE CODE FOR CAROUSEL
-
-         
-            
-        </section>
-        <section>
-            <article>
-
-
-
-            </article>
-        </section>
+      <h1 style="text-align: center;">New arrivals</h1>
+      <div class="container-carousel">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="carousel slide media-carousel" id="media">
+              <div class="carousel-inner">
+                <div class="item  active">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <a class="thumbnail" href="#"
+                        ><img alt="lolita" src="images/lolita.jpeg"
+                      /></a>
+                      <h4 style="text-align: center;">Lolita</h4>
+                    </div>
+                    <div class="col-md-4">
+                      <a class="thumbnail" href="#"
+                        ><img alt="" src="images/fitzgerald.jpeg"
+                      /></a>
+                      <h4 style="text-align: center;">The collected Works</h4>
+                    </div>
+                    <div class="col-md-4">
+                      <a class="thumbnail" href="#"
+                        ><img alt="" src="images/pygmy.jpeg"
+                      /></a>
+                      <h4 style="text-align: center;">Pygmy</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <a class="thumbnail" href="#"
+                        ><img alt="" src="images/night%20train.jpg"
+                      /></a>
+                      <h4 style="text-align: center;">Night train</h4>
+                    </div>
+                    <div class="col-md-4">
+                      <a class="thumbnail" href="#"
+                        ><img alt="" src="images/templatemo_image_03.jpg"
+                      /></a>
+                      <h4 style="text-align: center;">All about gardening</h4>
+                    </div>
+                    <div class="col-md-4">
+                      <a class="thumbnail" href="#"
+                        ><img alt="" src="images/templatemo_image_04.jpg"
+                      /></a>
+                      <h4 style="text-align: center;">All about sushi</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a data-slide="prev" href="#media" class="left carousel-control"
+                >‹</a
+              >
+              <a data-slide="next" href="#media" class="right carousel-control"
+                >›</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
-    <footer>
-
-
-
-    </footer>
-</body>
-
+    <footer></footer>
+  </body>
 </html>
