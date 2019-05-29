@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -11,97 +11,130 @@
 
     <link href="css/style.css" rel="stylesheet">
 </head>
-    <div class="topnav">
-  
-  <input type="text" placeholder="Search..">
-</div>
 
-<body>
 
-    <header>
-        <div class="container">
 
-            <div class="logo"> <a href="index.html">
-                    <img src="images/logo.svg" alt="logo image">
-                </a></div>
+<header>
 
-            <div class="nav-main-menu">
 
-                <div class="nav">
-                    <a href="index.html" class="button">Campaign</a>
-                </div>
+    <div class="logo"> <a href="index.html">
+            <img src="images/logo.svg" alt="logo image">
+        </a></div>
 
-                <div class="nav">
-                    <a href="booksinstock.html" class="button">Books in stock</a>
-                </div>
 
-                <div class="nav">
-                    <a href="Newarrivals.html" class="button">New Arrivals</a>
-                </div>
 
-                <div class="nav">
-                    <a href="About.html" class="button"> About</a>
-                </div>
+</header>
 
-            </div>
-        </div>
-    </header>
 
+
+
+<body style="background-image:url(images/background.jpg)">
     <section>
-        <hr>
+
+
+        <div class="landingcontainer">
 
 
 
-        <div class="cover">
-            <div class="title">
-                <div class="nav">
-                    <a href="index.html" class="button">More</a>
-                </div>
+            <div class="firstpage">
+                <a href="booksinstock.html">
+                    <h2 class="page">Books in Stock</h2>
+                </a>
+                <hr id="verticalx">
+                
+                            <a href="booksinstock.html"> <div class="icon">
+  <div class="arrow"></div>
+</div>
+                </a>
+                
             </div>
-            <div>
-                <img src="images/produce.png" class="books" alt="books"></div>
+
+
+
+            <div class="secondpage">
+                <a href="newarrivals.html">
+                    <h2 class="page">New Arrivals</h2>
+                </a>
+                  <hr id="verticalx">
+                <a href="newarrivals.html">   <div class="icon2">
+  <div class="arrow2"></div>
+</div></a>
+            </div>
+
+
+
+            <div class="thirdpage">
+
+                <a href="about.html">
+                    <h2 class="page">About</h2>
+                </a>
+                             <a href="about.html"> <div class="icon3">
+  <div class="arrow3"></div>
+</div></a>
+            </div>
+
+
+
         </div>
-        <hr>
-    </section>
-
-
-
-    <section style="background-color: #edc6a9; color:black;">
-
-        <p style="text-align:center; font-size:2em; padding:1em; padding-bottom: 0px; margin:0px;"> </p>
-
-        <div class="cover" style="color:#000000;">
-            <p>Enjoy our offer. Buy a book and get the second one for free. With just one click, you can always buy online books of love, adventure, fiction, horror, dramaturgy, poetry and literary theory, folklore and more...</p>
-        </div>
-
-        <div class="campaign-box">
-            <div class="campaign-item">
-                <h2 style="color:black;">Books in stock</h2>
-                <p>See what books we have.</p>
-            </div>
-            <div class="campaign-item">
-                <h2 style="color:black;">New Arrivals</h2>
-                <p>Choose from over 50.000 of books</p>
-            </div>
-            <div class="campaign-item">
-                <h2 style="color:black;">About</h2>
-                <p>Read more about us</p>
-            </div>
-        </div>
-
     </section>
 
 
 
     <footer>
 
-        <div class="container2">
-            <a target="_blank" href="https://www.facebook.com/lavazzadanmark/"><img src="images/fb.png" alt="facebook-logo" class="icons"></a>
-            <a target="_blank" href="https://www.instagram.com/lavazzaofficial/"><img src="images/ig.png" alt="instagram-logo" class="icons"></a>
-            <a target="_blank" href="https://twitter.com/Lavazza"><img src="images/tw.png" alt="twitter-logo" class="icons"></a>
-        </div>
+
 
     </footer>
 </body>
+<script>const $icon = document.querySelector('.icon');
+const $arrow = document.querySelector('.arrow');
 
+$icon.onmouseover = () => {
+  $arrow.animate([
+    {left: '0'},
+    {left: '10px'},
+    {left: '0'}
+  ],{
+    duration: 700,
+    iterations: Infinity
+  });
+}
+    
+   const $icon2 = document.querySelector('.icon2');
+const $arrow2 = document.querySelector('.arrow2');
+
+$icon2.onmouseover = () => {
+  $arrow2.animate([
+    {left: '0'},
+    {left: '10px'},
+    {left: '0'}
+  ],{
+    duration: 700,
+    iterations: Infinity
+  });
+} 
+    
+    
+      const $icon3 = document.querySelector('.icon3');
+const $arrow3 = document.querySelector('.arrow3');
+
+$icon3.onmouseover = () => {
+  $arrow3.animate([
+    {left: '0'},
+    {left: '10px'},
+    {left: '0'}
+  ],{
+    duration: 700,
+    iterations: Infinity
+  });
+} 
+    
+    
+    
+    
+    
+    
+    
+    
+    </script>
 </html>
